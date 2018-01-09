@@ -27,10 +27,20 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         args = args.splice(1);
         switch(cmd) {
             // !ping
-            case 'ping':
+            case 'sa':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Pong!'
+                    message: 'Schularbeiten müssen noch geadded werden!!!'
+                });
+             case 'test':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Tests müssen noch geadded werden!!!'
+                });
+             case 'termall':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'Es wurden bisher noch keine Termine geaddet!!!'
                 });
             break;
             // Just add any case commands if you want to..
