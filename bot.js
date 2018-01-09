@@ -13,7 +13,8 @@ client.on('message', message => {
     	message.reply('Tests/Wiederholungen: || Deutsch: 10.1.2018 || Netzwerktechnik: 15.1.2018 || ITP2: 19.1.2018');
   	}
     if (message.content === '!termall') {
-    	message.reply('Es wurden noch keine Termine eingetragen. Wenn du die Termine aber hast, sag @KinqRoot bescheid!!!');
+    	message.reply('Schularbeiten: || Mathe: 11.1.2018');
+        message('Tests/Wiederholungen: || Deutsch: 10.1.2018 || Netzwerktechnik: 15.1.2018 || ITP2: 19.1.2018');
   	}
 });
 
