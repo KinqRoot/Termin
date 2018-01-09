@@ -18,7 +18,7 @@ client.on('message', message => {
 
   	}
     if (message.conten === '!termhelp'){
-        message.reply('\n Termin Befehle: \n !sa Zeigt die Schularbeiten an \n !test Zeigt die Tests an \n !termall Zeigt alle Termine an')
+        message.reply('\n Termin Befehle: \n !sa Zeigt die Schularbeiten an \n !test Zeigt die Tests an \n !termall Zeigt alle Termine an');
     }
 });
 
