@@ -6,8 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === '!sa') {
+    	message.reply('Es wurden noch keine Termine eingetragen. Wenn du die Termine aber hast, sag @KinqRoot bescheid!!!');
+  	}
+    if (message.content === '!test') {
+    	message.reply('Es wurden noch keine Termine eingetragen. Wenn du die Termine aber hast, sag @KinqRoot bescheid!!!');
+  	}
+    if (message.content === '!termall') {
+    	message.reply('Es wurden noch keine Termine eingetragen. Wenn du die Termine aber hast, sag @KinqRoot bescheid!!!');
   	}
 });
 
