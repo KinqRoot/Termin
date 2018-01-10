@@ -20,6 +20,9 @@ client.on('message', message => {
     if (message.content === '!termhelp'){
         message.reply('\n Termin Befehle: \n !sa Zeigt die Schularbeiten an \n !test Zeigt die Tests an \n !termall Zeigt alle Termine an');
     }
+    if (message.content === '@Termin'){
+        message.reply('ey, will nix chattn mit dir.');
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
