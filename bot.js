@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    String sa = '\n Schularbeiten: \n Derzeit keine Schularbeiten vorhanden.';
-    String test = '\n Tests/Wiederholungen: \n Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018'
+    String sa = '\n Schularbeiten: ' + '\n' + 'Derzeit keine Schularbeiten vorhanden.';
+    String test = '\n Tests/Wiederholungen: ' + '\n' + 'Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018'
     if (message.content === '!sa') {
     	message.reply(sa);
   	}
