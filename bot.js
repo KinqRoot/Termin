@@ -6,14 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    String sa = '\n Schularbeiten: \n Derzeit keine Schularbeiten vorhanden.';
+    String test = '\n Tests/Wiederholungen: \n Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018'
     if (message.content === '!sa') {
-    	message.reply('\n Schularbeiten: \n Mathe: 11.1.2018');
+    	message.reply(sa);
   	}
     if (message.content === '!test') {
-    	message.reply('\n Tests/Wiederholungen: \n Deutsch: 10.1.2018 \n Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018');
+    	message.reply(test);
   	}
     if (message.content === '!termall') {
-    	message.reply('\n Schularbeiten: \n Mathe: 11.1.2018 \n \n Tests/Wiederholungen: \n Deutsch: 10.1.2018 \n Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018')
+    	message.reply(sa + '\n' + test)
                  
 
   	}
