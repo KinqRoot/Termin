@@ -6,24 +6,24 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    $sa = "\n Schularbeiten: ' + '\n' + 'Derzeit keine Schularbeiten vorhanden.";
-    $tests = "\n Tests/Wiederholungen: ' + '\n' + 'Derzeit keine Tests vorhanden.";
+    var sa = "\n Schularbeiten: ' + '\n' + 'Derzeit keine Schularbeiten vorhanden.";
+    var tests = "\n Tests/Wiederholungen: ' + '\n' + 'Derzeit keine Tests vorhanden.";
     if (message.content === '!sa') {
-    	message.reply($sa);
+    	message.reply(sa);
   	}
     if (message.content === '!test') {
-    	message.reply($tests);
+    	message.reply(tests);
   	}
     if (message.content === '!termall') {
-    	message.reply($sa .  "\n" .  $tests)
+    	message.reply(sa +  "\n" +  tests)
                  
 
   	}
     if (message.content === '!termhelp'){
         message.reply('\n Termin Befehle: \n !sa Zeigt die Schularbeiten an \n !test Zeigt die Tests an \n !termall Zeigt alle Termine an');
     }
-    if (message.content === '@Termin#5708'){
-        message.reply('ey, will nix chattn mit dir.');
+    if (message.content === 'Hallo'){
+        message.reply('Ey, will nix chattn mit dir :^(');
     }
 });
 
