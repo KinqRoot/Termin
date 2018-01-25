@@ -6,14 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    $sa = "\n Schularbeiten: ' + '\n' + 'Derzeit keine Schularbeiten vorhanden.";
+    $tests = "\n Tests/Wiederholungen: ' + '\n' + 'Derzeit keine Tests vorhanden.";
     if (message.content === '!sa') {
-    	message.reply('\n Schularbeiten: ' + '\n' + 'Derzeit keine Schularbeiten vorhanden.');
+    	message.reply($sa);
   	}
     if (message.content === '!test') {
-    	message.reply('\n Tests/Wiederholungen: ' + '\n' + 'Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018');
+    	message.reply($tests);
   	}
     if (message.content === '!termall') {
-    	message.reply('\n Schularbeiten: ' + '\n' + 'Derzeit keine Schularbeiten vorhanden. \n \n Tests/Wiederholungen: \n Netzwerktechnik: 15.1.2018 \n ITP2: 19.1.2018')
+    	message.reply($sa .  "\n" .  $tests)
                  
 
   	}
