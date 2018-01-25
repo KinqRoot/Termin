@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    var sa = "\nSchularbeiten: "  + '\n' + "Derzeit keine Schularbeiten vorhanden.";
-    var tests = "\nTests/Wiederholungen: " + '\n' + "Derzeit keine Tests vorhanden.";
+    var sa = '\n' + "Schularbeiten: "  + '\n' + "Derzeit keine Schularbeiten vorhanden.";
+    var tests = '\n' + "Tests/Wiederholungen: " + '\n' + "Derzeit keine Tests vorhanden.";
     if (message.content === '!sa') {
     	message.reply(sa);
   	}
